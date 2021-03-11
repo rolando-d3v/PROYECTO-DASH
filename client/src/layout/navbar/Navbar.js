@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import * as s from "./Navbar.styled";
 import { types } from "../../context/auth/types";
 import * as FaIcons from "react-icons/fa";
 import AuthContext from "../../context/auth/authContext";
 
 const navLink = [
-  { name: "Home", url: "/mavel" },
+  { name: "Home", url: "/libros" },
   { name: "Contact", url: "/productos" },
 ];
 

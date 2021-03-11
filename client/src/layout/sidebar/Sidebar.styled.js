@@ -3,17 +3,20 @@ import { Link } from "react-router-dom";
 
 export const SidebarContainer = styled.section`
   /* position: fixed; */
+  display: flex;
   background-color: #212121;
   width: 18rem;
   height: 100vh;
   flex-flow: column nowrap;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-  top: 0px;
-  right: 0;
+  /* left: ${({ open }) => (open ? 0 : "-100%")}; */
+  /* transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)" )}; */
+  transform: ${({ open }) => (open ? "translateX(-100%)" :"translateX(0)"   )};
+  /* top: 0px;
+  right: 0; */
   width: 18em;
-  padding-left: 0;
+  /* padding-left: 0;
   margin-top: 0;
-  margin-left: 0;
+  margin-left: 0; */
   transition: all 0.3s ease;
 
   @media screen and (max-width: 768px) {

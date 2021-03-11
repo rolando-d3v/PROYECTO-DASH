@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 import React from 'react'
 
-export default function ContainerApp({children, open}) {
+export default function ContainerApp({children}) {
     return (
-        <ContainerAppx open={open} >
+        <ContainerAppx  >
             {children}
         </ContainerAppx>
     )
@@ -13,9 +13,11 @@ export default function ContainerApp({children, open}) {
 
 
 const ContainerAppx = styled.div`
-  background-color: #e6e1e1;
+  background-color: #a33131;
   width: 100%;
-  margin-left: ${({ open }) => (open ? "18rem" : "0")};
+  padding: 1rem;
+  height: 400px;
+  /* margin-left: ${({ open }) => (open ? "18rem" : "0")}; */
   transition: all 0.3s ease;
   /* height: 100vh; */
 `;
