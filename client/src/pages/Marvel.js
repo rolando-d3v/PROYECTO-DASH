@@ -7,7 +7,7 @@ export default function Marvel() {
 
   return (
     <div>
-      <h3 className='font-bold text-2xl' >Heroes de Marvel</h3>
+      <h3 >Heroes de Marvel</h3>
       <div>
         <HeroList publisher='Marvel Comics'/>
       </div>

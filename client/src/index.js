@@ -6,8 +6,8 @@ import GlobalStyle from "./styles/globalStyled";
 
 ReactDOM.render(
   <React.Fragment>
-    <GlobalStyle/>
     <AuthState>
+    <GlobalStyle/>
       <App />
     </AuthState>
   </React.Fragment>,
